@@ -21,23 +21,26 @@
   <!-- - - - - - - - - - HEADER - - - - - - - -->
   <header>
     <nav>
-      <h2>!st Agency</h2>
+    <div class="sectionContainer">
+      <h1><span>!st</span>Agency</h1>
+      <a href="#" class="burgerIcon">BURGER</a>
       <ul>
-        <li>Home</li>
-        <li>About us</li>          
-        <li>services</li>          
-        <li>profile</li>         
-        <li>client</li>         
-        <li>blog</li>        
-        <li>Contact</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>          
+        <li><a href="#services">services</a></li>          
+        <li><a href="#portfolio">profile</a></li>         
+        <li><a href="#clients">client</a></li>         
+        <li><a href="#blog">blog</a></li>        
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      </div>
     </nav>
 
     <section id="home">
       <div class="sectionContainer">
         <div class="col-2">
           <p>Hello</p>
-          <h1>My Name is John Doe</h1>
+          <h1>My Name is <span>John Doe</span></h1>
           <h2>Ceo |  !st Agency</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
           <button>Click here</button>
@@ -170,28 +173,43 @@
 
 
   <!-- - - - - - - - - - FOOTER - - - - - - - -->
-  <footer>
-    <h2>Contacts..</h2>
-    <div class="col-1">
-      <h3>Address Info</h3>
+  <footer id="contact">
+    <div class="sectionContainer">
+      <h2>Contact...</h2>
+      <div class="col-2">
+        <h3>Address Info</h3>
+        <p><span>Email</span>free@psdfreebies.com</p>
+        <p><span>Call Us !</span>+123 456 7890<br>+123 456 7890</p>
+        <p><span>Address</span>123, Main Road, New City, My Country 123456</p>
+      </div>
+      <div class="col-2">
+        <h3>Get in Touch</h3>
+        <form name="contact-form" action="#.php">
+          <label>Name</label><input type="text" name="user name" />
+          <label>Email</label><input type="email" name="user e-mail address" />
+          <label>Phone</label><input type="tel" name="user phone number" />
+          <label>Message</label><textarea name="message content"></textarea>
+          <input type="submit" name="send message button" value="Submit" class="bttn" />
+        </form>
+      </div>
 
+      <div class="socialIconsPane">
+        <img src="img/social_FB.png" alt="icon for facebook: white letter 'f' in white circle">
+        <img src="img/social_gPlus.png" alt="icon for google plus: white capital letter 'G' in white circle">
+        <img src="img/social_vk.png" alt="icon for something: white letters 'v' and 'k' white circle">
+        <img src="img/social_YT.png" alt="icon for youtube: white logo of you tube in white circle">
+        <img src="img/social_in.png" alt="icon for LinkedIn: white letters 'i' and 'n' in white circle">
+        <img src="img/social_digg.png" alt="icon for digg: white 'digg' text in white circle">
+        <img src="img/social_branch.png" alt="icon for something2: white something2 in white circle">
+      </div>
+      <p>Designed By PSDFreebies.com</p>
+      <p>COPYRIGHT 2017</p>
     </div>
-    <div class="col-1">
-      <h3>Get in Touch</h3>
-      <form name="contact-form">
-
-      </form>
-    </div>
-
-    <div>
-      SOCIAL ICONS
-    </div>
-    <p>Designed By PSDFreebies.com</p>
-    <p>COPYRIGHT 2017</p>
   </footer>
 
 
   <!-- resources: scripts -->
+  <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

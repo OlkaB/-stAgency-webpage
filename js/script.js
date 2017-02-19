@@ -1,12 +1,12 @@
-"use strict";
+console.log("works");
 
 //sticky nav
 $(document).ready(function(){
       $(window).scroll(function() { 
         if ($(document).scrollTop() > 50) {
-          $(".navbar-fixed-top").css("background-color", "#f9f8fb");
+          $("nav").css("background-color", "rgba(0,0,0,.8)");
         } else {
-          $(".navbar-fixed-top").css("background-color", "transparent");
+          $("nav").css("background-color", "transparent");
         }
       });
     });
@@ -25,3 +25,10 @@ $('a[href*="#"]:not([href="#"])').click(function() {
     }
   }
 });
+
+//burger menu
+/*
+$(".burgerIcon").click(function(){
+  $("p").toggleClass("class1 class2");
+});*/
+

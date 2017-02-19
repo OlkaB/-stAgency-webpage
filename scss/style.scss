@@ -23,8 +23,13 @@ font-family: 'Norican', cursive;
   box-sizing: border-box;
 }
 
+body, html {
+  width: 100%;
+}
+
 body {
   padding: 0;
+  margin:0;
   font-family: 'Lato', sans-serif;
   color: white;
   line-height: 150%;
@@ -85,7 +90,7 @@ body {
 }
 
 /* ------------- general utilities ------------------- */
-button {
+button, .bttn {
   display: block;
   width: 130px;
   height: 40px;
@@ -108,6 +113,9 @@ button {
   }
 }
 
+h1>span{
+  color: #0081ff;
+}
 
 /* ------------- HEADER ------------------- */
 header {
@@ -119,7 +127,101 @@ header {
 /*  nav  */
 nav {
   position: fixed;
-  display: none;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  color: white;
+  height: 70px;
+  padding: 10px 0;
+  background-color: red;
+  .sectionContainer {
+    height: 100%;
+    padding: 0;
+    background-color: green;
+  }
+  h1 {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0;
+  }
+  .burgerIcon {
+    display: none;
+  }
+  ul, li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  ul {
+    float: right;
+    -webkit-padding-start: 0;
+
+    li {
+      margin: 0 10px;
+
+      a{
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        background-color: red;
+        padding: 0 5px;
+        line-height: 3rem;
+        text-transform: uppercase;
+        font-size: 12px;
+      }}}
+    }
+
+
+    @media only screen and (max-width: 960px) {
+     nav {
+       .sectionContainer {
+         width: 100%;
+         padding: 0;
+         margin: 0;
+         max-width: none;
+       }
+       ul {
+        display: none;
+        list-style: none;
+        li {
+          background: pink;
+          border-top: 1px solid green;
+        }
+      }
+      .burgerIcon {
+        display: block;
+        float: right;
+        height: 100%;
+        background: yellow;
+        padding: 10px;
+      }
+      ul{
+       width: 100%;
+     }
+     .burgerIcon:hover + ul,
+     .burgerIcon:active + ul,
+     ul:hover, ul:active {
+      display: block;
+      position: absolute;
+      top: 58px;
+      left: 0px;
+      width: 100%;
+      li {
+        display: block;
+        height: 40px;
+        width: 100%;
+        a {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+
 }
 
 
@@ -276,8 +378,22 @@ main>section:nth-of-type(5){
 /* ------------- FOOTER ------------------- */
 /* contact */
 footer {
+  .sectionContainer {
+    & > p {
+      text-align: center;
+    }
+  }
   background-color: black;
+  .socialIconsPane {
+    margin: auto;
+    text-align: center;
+    img {
+      margin: 10px;
+    }
+
+  }
 }
+
 
 /* credits */
 
