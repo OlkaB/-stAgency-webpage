@@ -1,6 +1,6 @@
 console.log("works");
 
-//sticky nav
+// ----------------- sticky nav -----------------
 $(document).ready(function(){
       $(window).scroll(function() { 
         if ($(document).scrollTop() > 50) {
@@ -12,7 +12,7 @@ $(document).ready(function(){
     });
 
 
-//smooth scrolling
+// ----------------- smooth scrolling -----------------
 $('a[href*="#"]:not([href="#"])').click(function() {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     var target = $(this.hash);
@@ -26,9 +26,19 @@ $('a[href*="#"]:not([href="#"])').click(function() {
   }
 });
 
-//burger menu
-/*
+
+
+// -----------------  burger menu  -----------------
+/* JS solution
+document.getElementById('burgerIcon').addEventListener('click', toggleNavVisibility);
+function toggleNavVisibility(){
+  var navItem = document.getElementsByTagName('nav')[0];
+  navItem.className == "" ? navItem.className = "mobile" : navItem.className = "";
+}
+*/
+
+// JQ solution
 $(".burgerIcon").click(function(){
-  $("p").toggleClass("class1 class2");
-});*/
+  $("nav").toggleClass("mobile");
+});
 
