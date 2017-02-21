@@ -4,7 +4,7 @@ console.log("works");
 $(document).ready(function(){
       $(window).scroll(function() { 
         if ($(document).scrollTop() > 50) {
-          $("nav").css("background-color", "rgba(0,0,0,.8)");
+          $("nav").css("background-color", "rgba(0,0,0,.9)");
         } else {
           $("nav").css("background-color", "transparent");
         }
