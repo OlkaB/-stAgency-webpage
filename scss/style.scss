@@ -417,6 +417,14 @@ footer {
       padding-bottom: 20px;
       padding-left: 50px;
       position: relative;
+      font-size: 14px;
+      &>a {
+        color: white;
+        word-break: break-all;
+        &:hover{
+          color: #0081ff;
+        }
+      }
       &::before {
         content: '';
         width: 40px;
@@ -618,6 +626,9 @@ footer {
   }
   textarea {
     margin-top: 12.5px;
+  }
+  .col-2>p{
+     font-size: 1rem;
   }
 }
 }
