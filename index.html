@@ -13,7 +13,7 @@
   <!-- resources:styles -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,400,700,900|Norican" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300,400,700,900|Lobster" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <nav class="">
       <div class="sectionContainer">
         <h1><span>!st</span>Agency</h1>
-        <p  class="burgerIcon" id="burgerIcon">MENU</p>
+        <p  class="burgerIcon">MENU</p>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About us</a></li>          
@@ -94,25 +94,26 @@
       <h2>Profile</h2>
       <h3>I Make Beautiful Things</h3>
       <div class="col-2">
-        <img src="img/showcase_1.jpg" alt="">
-        <img src="img/showcase_1a.jpg" alt="">
-        <img src="img/showcase_1b.jpg" alt="">
+        <img src="img/gallery/1.jpg" alt="">
+        <img src="img/gallery/2.jpg" alt="">
+        <img src="img/gallery/3.jpg" alt="">
       </div>
       
       <div class="col-2">
-        <img src="img/showcase_2.jpg" alt="">
-        <img src="img/showcase_3a.jpg" alt="">
-        <img src="img/showcase_3b.jpg" alt="">
+        <img src="img/gallery/4.jpg" alt="">
+        <img src="img/gallery/5.jpg" alt="">
+        <img src="img/gallery/6.jpg" alt="">
       </div>
     </section>
 
 
-    <div id="modalGallery" class="modalGallery">
+    <div class="modalGallery">
       <div class="pictureFrame">
-        <div id="galleryPicture" class="galleryPicture">
+        <span class="closeModalBttn">x</span>
+        <div class="galleryPicture">
         <div class="navigationPane">
-          <span>< prev</span>
-          <span>next ></span>
+          <span id="prevPicBttn" class="scrollPic">< prev</span>
+          <span id="nextPicBttn" class="scrollPic">next ></span>
         </div>
       </div>
     </div>
@@ -136,27 +137,27 @@
       <div class="sectionContainer">
         <div class="col-2">
           <a href="#"> 
-            <div class="blogItem">
+            <div class="sectionTitle blogItem">
               <h2>Blog</h2>
               <h3>I Write Beautiful Things</h3>
             </div> 
           </a>
           <a href="#"> 
             <div class="blogItem">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+              <p class="blogArticlePreview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
               <p class="date">11 November</p>
             </div>
           </a>
           <a href="#"> 
             <div class="blogItem">
               <p class="date">11 November</p>
-              <h2>Lorem ipsum dolor </h2>
+              <h3>Lorem ipsum dolor </h3>
             </div>
           </a>
           <a href="#"> 
             <div class="blogItem">
               <p class="date">11 November</p>
-              <h2>Lorem ipsum dolor </h2>
+              <h3>Lorem ipsum dolor </h3>
             </div>
           </a>
         </div>
@@ -164,15 +165,15 @@
          <a href="#"> 
           <div class="blogItem">
             <p class="date">11 November</p>
-            <h2>Lorem ipsum dolor </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <h3>Lorem ipsum dolor </h3>
+            <p class="blogArticlePreview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           </div>
         </a>
         <a href="#"> 
           <div class="blogItem">
             <p class="date">11 November</p>
-            <h2>Lorem ipsum dolor </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <h3>Lorem ipsum dolor </h3>
+            <p class="blogArticlePreview">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
           </div>
         </a>
       </div>

@@ -1,7 +1,7 @@
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Lato', sans-serif;
-font-family: 'Norican', cursive;
+font-family: 'Lobster', cursive;
 */
 
 
@@ -145,8 +145,8 @@ h4 {
 }
 
 main h2, header>section p:first-of-type {
-  font-family: 'Norican', cursive;
-  font-size: 1.5rem;
+  font-family: 'Lobster', cursive;
+  font-size: 1.8rem;
 }
 
 main p {
@@ -324,6 +324,7 @@ main>section:nth-of-type(3){
   img{
     clear: both;
     display: block;
+    cursor: pointer;
   }
   &>.col-2 {
     text-align: center;
@@ -337,6 +338,7 @@ main>section:nth-of-type(3){
 
 /* portfolio modal gallery*/
 .modalGallery{
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -351,6 +353,26 @@ main>section:nth-of-type(3){
     left: 50%;
     transform: translateX(-50%);
   }
+  .closeModalBttn{
+    display: block;
+    text-align: center;
+    color: #cc0000;
+    text-shadow: 1px 1px 1px rgba(50,50,50,.5);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    &:active {
+      top: 1px;
+      right: 1px;
+    }
+  }
   .pictureFrame {
     width: 95%;
     max-width: 900px;
@@ -358,32 +380,16 @@ main>section:nth-of-type(3){
     padding: 40px 10px 10px 10px;
     color: white;
     top: 100px;
-    &::before{
-      content: 'x';
-      display: block;
-      text-align: center;
-      color: #cc0000;
-      text-shadow: 1px 1px 1px rgba(50,50,50,.5);
-      width: 40px;
-      height: 40px;
-      padding: 5px;
-      font-weight: 900;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 30px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      cursor: pointer;
-    }
     .galleryPicture{
       display: block;
       margin: auto;
       height: 100%;
       width: 100%;
-      background-image: url('../img/showcase_1.jpg');
+      background-image: url('../img/gallery/1.jpg');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
+      transition: background-image .5s ;
     }
   }
   .navigationPane {
@@ -445,9 +451,13 @@ main>section:nth-of-type(5){
       font-size: 12px;
       font-weight: 600;
     }
+    .blogArticlePreview {
+      overflow: hidden;
+      max-height: 5rem;
+    }
   }
-  h2 {
-    font-family: 'Montserrat', sans-serif;
+  h3 {
+    padding-bottom: 0;  
   }
   .col-2:nth-of-type(1){
     &>a:nth-of-type(1)>.blogItem{
@@ -669,16 +679,18 @@ main>section:nth-of-type(3){
 
 /* blog */
 main > section:nth-of-type(5){
+  .sectionTitle {
+    h2, h3 {
+      text-align: left;
+    }
+  }
   a {
     & > .blogItem {
       max-width: none;
       height: 210px;
-      p{
-        overflow: hidden;
-        max-height: 100px;
-      }
     }
   }
+
   .col-2:nth-of-type(1) {
     padding-right: 10px;
     & > a:nth-of-type(1) > .blogItem, & > a:nth-of-type(2) > .blogItem, p, h2{
